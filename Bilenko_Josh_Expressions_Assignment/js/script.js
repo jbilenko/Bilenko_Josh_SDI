@@ -27,7 +27,7 @@ var cutTen = cutCharge * tipPercent[0];
 var cutFifteen = cutCharge * tipPercent[1];
 var cutTwenty = cutCharge * tipPercent[2];
 
-//Haircut & Blowdry Totals
+//Haircut Totals
 var hairTotal = cutCharge - (cutCharge * salonCut);
 
 //Haircut earnings
@@ -44,7 +44,7 @@ var fullHair2 = hairTotal;
 //Console logs
 console.log("Hey! Welcome to the Salon-culator");
 console.log("You are working at " + whatSalon + " where they are taking out " + cutConsole + "% out of each service.");
-console.log("You are currently charging $" + cutCharge +" for haircuts and $" + blowDry + " for blowdrys.");
+console.log("You are currently charging $" + cutCharge +" for haircuts.");
 console.log("An okay tip from a client after your haircut is $" + cutTen + "");
 console.log("A decent tip from a client after your haircut is $" + cutFifteen + "");
 console.log("A great tip from a client after your haircut is $" + cutTwenty + "");
@@ -53,10 +53,13 @@ console.log("A 10% tip will give you $" + fullHair0 + ", a 15% tip will give you
 console.log("You said you had " + cutTimes + " haircuts today giving you a total earnings of $" + hairToday + " no tips included!");
 console.log("Have a good day!");
 
+/**
+Final Test
 
 
 
 
+*/
 
 //Console logs
 // console.log(salonCut); Tested to see if Math Round created a percentage amount in decimals.  Input 30 for prompt came out as 0.3 TEST COMPLETE.
