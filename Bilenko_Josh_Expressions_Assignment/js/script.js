@@ -8,10 +8,17 @@ SDI Section 2
 // I decided to create a calculator that would give you the ideal tip for your service
 
 var whatSalon = prompt("What Salon do you work in?");  // prompt to know what salon they are in
+
+var cutTimes = prompt("How many haircuts did you have today?");
+cutTimes = Number(cutTimes);
 var cutCharge = prompt("How much do you charge for a haircut?"); // prompt to know how much they charge for a haircut
 cutCharge = Number(cutCharge); // notifying that cutCharge is a numerical value
+
+var blowTimes = prompt("How many blowdrys did you have today?");
+blowTimes = Number(blowTimes);
 var blowDry = prompt("How much do you charge for a blowdry?"); // prompt to know how much they charge for a blowdry
 blowDry = Number(blowDry); // notifying that blowDry is a numerical value
+
 var salonCut = prompt("How much percent does " + whatSalon + " take out of your services?"); // prompt what cut the salon takes for your services
 salonCut = Number(salonCut); // notifying that salonCut is a numercal value
 salonCut = Math.round(salonCut)/100;
