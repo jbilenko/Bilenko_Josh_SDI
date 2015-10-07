@@ -5,7 +5,7 @@ Expressions Assignment
 SDI Section 2
 **/
 
-// I decided to create a calculator that would give you the ideal tip for your service
+// I decided to create a calculator that would give you the ideal tip for your service while showing your earnings for the day.
 
 var whatSalon = prompt("What Salon do you work in?");  // prompt to know what salon they are in
 
@@ -22,6 +22,7 @@ blowDry = Number(blowDry); // notifying that blowDry is a numerical value
 var salonCut = prompt("How much percent does " + whatSalon + " take out of your services?"); // prompt what cut the salon takes for your services
 salonCut = Number(salonCut); // notifying that salonCut is a numercal value
 salonCut = Math.round(salonCut)/100;
+cutConsole = Math.round(salonCut * 100);
 
 
 
@@ -55,6 +56,15 @@ var fullBlow2 = blowTotal;
   blowTotal0 += blowTen;
   blowTotal1 += blowFifteen;
   blowTotal2 += blowTwenty;
+
+//Console logs
+console.log("Hey! Welcome to the Salon-culator");
+console.log("You are working at " + whatSalon + " where they are taking out " + cutConsole + "% out of each service.");
+console.log("You are currently charging $" + cutCharge +" for haircuts and $" + blowDry + " for blowdrys.");
+console.log("An okay tip from a client after your haircut is $" + cutTen + "");
+console.log("A decent tip from a client after your haircut is $" + cutFifteen + "");
+console.log("A great tip from a client after your haircut is $" + cutTwenty + "");
+
 
 
 
