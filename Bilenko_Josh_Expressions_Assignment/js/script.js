@@ -31,7 +31,10 @@ var blowTen = blowDry * tipPercent[0];
 var blowFifteen = blowDry * tipPercent[1];
 var blowTwenty = blowDry * tipPercent[2];
 
-//Haircut Totals
+//Haircut & Blowdry Totals
+var hairTotal = cutCharge - (cutCharge * salonCut);
+var blowTotal = blowDry - (blowDry * salonCut);
+
 
 
 
