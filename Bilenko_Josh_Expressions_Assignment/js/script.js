@@ -42,8 +42,20 @@ var blowTotal = blowDry - (blowDry * salonCut);
 //Console logs
 // console.log(salonCut); Tested to see if Math Round created a percentage amount in decimals.  Input 30 for prompt came out as 0.3 TEST COMPLETE.
 
+/**
+Test is complete, another perfect score!
+I input 45 for cutCharge, 50 for blowDry, 45 for salonCut, and Lanphier for whatSalon.
+
+------ Output was ------
+Another Test!
+Your haircut charge is 45!
+Your blowdry charge is 50!
+What you get for your haircuts after Lanphier takes out is 24.75!
+What you get for your blowdrys after Lanphier takes out is 27.5!
+
 console.log("Another Test!");
 console.log("Your haircut charge is " + cutCharge + "!");
 console.log("Your blowdry charge is " + blowDry + "!");
 console.log("What you get for your haircuts after " + whatSalon + " takes out is " + hairTotal + "!");
 console.log("What you get for your blowdrys after " + whatSalon + " takes out is " + blowTotal + "!");
+*/
