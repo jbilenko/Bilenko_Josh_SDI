@@ -14,11 +14,6 @@ cutTimes = Number(cutTimes);
 var cutCharge = prompt("How much do you charge for a haircut?"); // prompt to know how much they charge for a haircut
 cutCharge = Number(cutCharge); // notifying that cutCharge is a numerical value
 
-var blowTimes = prompt("How many blowdrys did you have today?");
-blowTimes = Number(blowTimes);
-var blowDry = prompt("How much do you charge for a blowdry?"); // prompt to know how much they charge for a blowdry
-blowDry = Number(blowDry); // notifying that blowDry is a numerical value
-
 var salonCut = prompt("How much percent does " + whatSalon + " take out of your services?"); // prompt what cut the salon takes for your services
 salonCut = Number(salonCut); // notifying that salonCut is a numercal value
 salonCut = Math.round(salonCut)/100;
@@ -34,14 +29,8 @@ var cutTen = cutCharge * tipPercent[0];
 var cutFifteen = cutCharge * tipPercent[1];
 var cutTwenty = cutCharge * tipPercent[2];
 
-//Blowdry Tip Calculations
-var blowTen = blowDry * tipPercent[0];
-var blowFifteen = blowDry * tipPercent[1];
-var blowTwenty = blowDry * tipPercent[2];
-
 //Haircut & Blowdry Totals
 var hairTotal = cutCharge - (cutCharge * salonCut);
-var blowTotal = blowDry - (blowDry * salonCut);
 
 //Full Totals
 var fullHair0 = hairTotal;
@@ -50,12 +39,6 @@ var fullHair2 = hairTotal;
   fullHair0 += cutTen;
   fullHair1 += cutFifteen;
   fullHair2 += cutTwenty;
-var fullBlow0 = blowTotal;
-var fullBlow1 = blowTotal;
-var fullBlow2 = blowTotal;
-  blowTotal0 += blowTen;
-  blowTotal1 += blowFifteen;
-  blowTotal2 += blowTwenty;
 
 //Console logs
 console.log("Hey! Welcome to the Salon-culator");
@@ -64,6 +47,7 @@ console.log("You are currently charging $" + cutCharge +" for haircuts and $" + 
 console.log("An okay tip from a client after your haircut is $" + cutTen + "");
 console.log("A decent tip from a client after your haircut is $" + cutFifteen + "");
 console.log("A great tip from a client after your haircut is $" + cutTwenty + "");
+
 
 
 
