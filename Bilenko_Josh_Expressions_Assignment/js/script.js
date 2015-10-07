@@ -35,6 +35,19 @@ var blowTwenty = blowDry * tipPercent[2];
 var hairTotal = cutCharge - (cutCharge * salonCut);
 var blowTotal = blowDry - (blowDry * salonCut);
 
+//Full Totals
+var fullHair0 = hairTotal;
+var fullHair1 = hairTotal;
+var fullHair2 = hairTotal;
+  fullHair0 += cutTen;
+  fullHair1 += cutFifteen;
+  fullHair2 += cutTwenty;
+var fullBlow0 = blowTotal;
+var fullBlow1 = blowTotal;
+var fullBlow2 = blowTotal;
+  blowTotal0 += blowTen;
+  blowTotal1 += blowFifteen;
+  blowTotal2 += blowTwenty;
 
 
 
