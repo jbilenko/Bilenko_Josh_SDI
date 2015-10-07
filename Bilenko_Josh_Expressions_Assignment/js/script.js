@@ -12,6 +12,11 @@ var cutCharge = prompt("How much do you charge for a haircut?"); // prompt to kn
 cutCharge = Number(cutCharge); // notifying that cutCharge is a numerical value
 var blowDry = prompt("How much do you charge for a blowdry?"); // prompt to know how much they charge for a blowdry
 blowDry = Number(blowDry); // notifying that blowDry is a numerical value
+var salonCut = prompt("How much percent does " + whatSalon + " take out of your services?"); // prompt what cut the salon takes for your services
+salonCut = Number(salonCut); // notifying that salonCut is a numercal value
+salonCut = Math.round(salonCut)/100;
+
+
 
 //Tip Variables
 var tipPercent = [.1,.15,.2]; // array for tip percentages
@@ -25,3 +30,11 @@ var cutTwenty = cutCharge * tipPercent[2];
 var blowTen = blowDry * tipPercent[0];
 var blowFifteen = blowDry * tipPercent[1];
 var blowTwenty = blowDry * tipPercent[2];
+
+//Haircut Totals
+
+
+
+
+//Console logs
+// console.log(salonCut); Tested to see if Math Round created a percentage amount in decimals.  Input 30 for prompt came out as 0.3 TEST COMPLETE.
