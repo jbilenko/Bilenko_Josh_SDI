@@ -55,10 +55,26 @@ console.log("Have a good day!");
 
 /**
 Final Test
+------ INPUT ------
+whatSalon = Lanphier
+cutTimes = 5 <--- How many haircuts you had today
+cutCharge = 45
+salonCut = 30
 
+------- OUTPUT -------
 
+Hey! Welcome to the Salon-culator script.js:45:1
+You are working at Lanphier where they are taking out 30% out of each service. script.js:46:1
+You are currently charging $45 for haircuts. script.js:47:1
+An okay tip from a client after your haircut is $4.5 script.js:48:1
+A decent tip from a client after your haircut is $6.75 script.js:49:1
+A great tip from a client after your haircut is $9 script.js:50:1
+Here are your total earnings after each haircut and depending on the tip: script.js:51:1
+A 10% tip will give you $36, a 15% tip will give you $38.25, and a 20% tip will give you $40.5 script.js:52:1
+You said you had 5 haircuts today giving you a total earnings of $157.5 no tips included! script.js:53:1
+Have a good day!
 
-
+TEST WAS COMPLETE, and AWESOME!
 */
 
 //Console logs
