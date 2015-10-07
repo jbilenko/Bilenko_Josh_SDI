@@ -19,8 +19,6 @@ salonCut = Number(salonCut); // notifying that salonCut is a numercal value
 salonCut = Math.round(salonCut)/100;
 cutConsole = Math.round(salonCut * 100);
 
-
-
 //Tip Variables
 var tipPercent = [.1,.15,.2]; // array for tip percentages
 
@@ -31,6 +29,9 @@ var cutTwenty = cutCharge * tipPercent[2];
 
 //Haircut & Blowdry Totals
 var hairTotal = cutCharge - (cutCharge * salonCut);
+
+//Haircut earnings
+var hairToday = cutTimes * hairTotal
 
 //Full Totals
 var fullHair0 = hairTotal;
@@ -47,6 +48,10 @@ console.log("You are currently charging $" + cutCharge +" for haircuts and $" + 
 console.log("An okay tip from a client after your haircut is $" + cutTen + "");
 console.log("A decent tip from a client after your haircut is $" + cutFifteen + "");
 console.log("A great tip from a client after your haircut is $" + cutTwenty + "");
+console.log("Here are your total earnings after each haircut and depending on the tip:");
+console.log("A 10% tip will give you $" + fullHair0 + ", a 15% tip will give you $" + fullHair1 + ", and a 20% tip will give you $" + fullHair2 + "");
+console.log("You said you had " + cutTimes + " haircuts today giving you a total earnings of $" + hairToday + " no tips included!");
+console.log("Have a good day!");
 
 
 
