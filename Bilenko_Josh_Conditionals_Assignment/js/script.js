@@ -98,13 +98,13 @@ if (salonRole == "Cut") {
   //Console logs
   console.log("Hey! Welcome to the Salon-culator");
   console.log("You are a Colorist at " + whatSalon + " where they are taking out " + cutConsole + "% out of each service.");
-  console.log("You are currently charging $" + colorCharge +" for haircuts.");
-  console.log("An okay tip from a client after your haircut is $" + colorTen + "");
-  console.log("A decent tip from a client after your haircut is $" + colorFifteen + "");
-  console.log("A great tip from a client after your haircut is $" + colorTwenty + "");
-  console.log("Here are your total earnings after each haircut and depending on the tip:");
+  console.log("You are currently charging $" + colorCharge +" for color.");
+  console.log("An okay tip from a client after your color is $" + colorTen + "");
+  console.log("A decent tip from a client after your color is $" + colorFifteen + "");
+  console.log("A great tip from a client after your color is $" + colorTwenty + "");
+  console.log("Here are your total earnings after each color and depending on the tip:");
   console.log("A 10% tip will give you $" + fullColor0 + ", a 15% tip will give you $" + fullColor1 + ", and a 20% tip will give you $" + fullColor2 + "");
-  console.log("You said you had " + colorTimes + " haircuts today giving you a total earnings of $" + colorToday + " no tips included!");
+  console.log("You said you had " + colorTimes + " clients today for color, giving you a total earnings of $" + colorToday + " no tips included!");
   console.log("Have a good day!");
 }
 
