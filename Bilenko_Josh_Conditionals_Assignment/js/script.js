@@ -16,19 +16,19 @@ while (salonRole == "") {
   var salonRole = prompt("Do you Cut or Color?"); // if left empty it will ask to fill in.
 }
 
-if (salonRole == "cut") {
+if (salonRole == ("Cut" || "cut")) {
 
   var cutTimes = prompt("How many haircuts did you have today?");
   cutTimes = Number(cutTimes);
   var cutCharge = prompt("How much do you charge for a haircut?"); // prompt to know how much they charge for a haircut
   cutCharge = Number(cutCharge); // notifying that cutCharge is a numerical value
 
-} else {
+} else if (salonRole == ("Color" || "color")) {
 
   var colorTimes = prompt("How many clients came in for color?"); // same as cutTimes
   colorTimes = Number(colorTimes);
   var colorCharge = prompt("How much do you charge for a color?"); // same as cutCharge
-  colorCharge = Number(colorTimes);
+  colorCharge = Number(colorCharge);
 
 }
 
@@ -75,9 +75,9 @@ var tipPercent = [.1,.15,.2]; // array for tip percentages
   var colorToday = colorTimes * colorTotal
 
   //Full Color Totals
-  var fullColor0 = hairTotal;
-  var fullColor1 = hairTotal;
-  var fullColor2 = hairTotal;
+  var fullColor0 = colorTotal;
+  var fullColor1 = colorTotal;
+  var fullColor2 = colorTotal;
     fullColor0 += colorTen;
     fullColor1 += colorFifteen;
     fullColor2 += colorTwenty;
@@ -116,8 +116,41 @@ While function works only when the field is left blank.  Don't know how to creat
 Test 2: Cut.
 
 
+INPUT
+whatSalon = Salon
+salonCut = 25
+cutCharge = 50
+cutTimes = 9
 
+OUTPUT
+You are a Hair Stylist at Salon where they are taking out 25% out of each service. script.js:88:3
+You are currently charging $50 for haircuts. script.js:89:3
+An okay tip from a client after your haircut is $5 script.js:90:3
+A decent tip from a client after your haircut is $7.5 script.js:91:3
+A great tip from a client after your haircut is $10 script.js:92:3
+Here are your total earnings after each haircut and depending on the tip: script.js:93:3
+A 10% tip will give you $42.5, a 15% tip will give you $45, and a 20% tip will give you $47.5 script.js:94:3
+You said you had 9 haircuts today giving you a total earnings of $337.5 no tips included! script.js:95:3
+Have a good day!
 
+Test 3: Color.
+
+INPUT
+whatSalon = Salon
+salonCut = 25
+colorCharge = 150
+colortimes = 9
+
+OUTPUT
+You are a Colorist at Salon where they are taking out 25% out of each service. script.js:100:3
+You are currently charging $150 for haircuts. script.js:101:3
+An okay tip from a client after your haircut is $15 script.js:102:3
+A decent tip from a client after your haircut is $22.5 script.js:103:3
+A great tip from a client after your haircut is $30 script.js:104:3
+Here are your total earnings after each haircut and depending on the tip: script.js:105:3
+A 10% tip will give you $127.5, a 15% tip will give you $135, and a 20% tip will give you $142.5 script.js:106:3
+You said you had 9 haircuts today giving you a total earnings of $1012.5 no tips included! script.js:107:3
+Have a good day! script.js:108:3
 
 
 */
