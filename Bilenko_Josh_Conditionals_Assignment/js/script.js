@@ -10,26 +10,26 @@ SDI Section 2
 var whatSalon = prompt("What Salon do you work in?");  // prompt to know what salon they are in
 var salonRole = prompt("Do you Cut or Color?"); // prompt to know what conditional it needs to read off of
 
-while (salonRole == "") {
-  alert("Sorry you did not tell us if you Cut or Color!");
-  console.log("Please let us no if you Cut or Color!");
-  var salonRole = prompt("Do you Cut or Color?"); // if left empty it will ask to fill in.
-}
-
-if (salonRole == "Cut") {
+if (salonRole == "cut") {
 
   var cutTimes = prompt("How many haircuts did you have today?");
   cutTimes = Number(cutTimes);
   var cutCharge = prompt("How much do you charge for a haircut?"); // prompt to know how much they charge for a haircut
   cutCharge = Number(cutCharge); // notifying that cutCharge is a numerical value
 
-} else {
+} else if (salonRole == "color") {
 
   var colorTimes = prompt("How many clients came in for color?"); // same as cutTimes
   colorTimes = Number(colorTimes);
   var colorCharge = prompt("How much do you charge for a color?"); // same as cutCharge
   colorCharge = Number(colorTimes);
 
+} else {
+  while (salonRole == "") {
+    alert("Sorry you did not tell us if you Cut or Color!");
+    console.log("Please let us no if you Cut or Color!");
+    var salonRole = prompt("Do you Cut or Color?"); // if left empty it will ask to fill in.
+  }
 }
 
 var salonCut = prompt("How much percent does " + whatSalon + " take out of your services?"); // prompt what cut the salon takes for your services
@@ -81,3 +81,9 @@ var tipPercent = [.1,.15,.2]; // array for tip percentages
     fullColor0 += colorTen;
     fullColor1 += colorFifteen;
     fullColor2 += colorTwenty;
+
+
+/**
+Test 1: While function
+While function works only when the field is left blank.  Don't know how to create it so that it will work for nothing but Cut or Color.
+*/
