@@ -10,6 +10,12 @@ SDI Section 2
 var whatSalon = prompt("What Salon do you work in?");  // prompt to know what salon they are in
 var salonRole = prompt("Do you Cut or Color?"); // prompt to know what conditional it needs to read off of
 
+while (salonRole == "") {
+  alert("Sorry you did not tell us if you Cut or Color!");
+  console.log("Please let us no if you Cut or Color!");
+  var salonRole = prompt("Do you Cut or Color?"); // if left empty it will ask to fill in.
+}
+
 if (salonRole == "Cut") {
 
   var cutTimes = prompt("How many haircuts did you have today?");
