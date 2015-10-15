@@ -30,3 +30,48 @@ var salonCut = prompt("How much percent does " + whatSalon + " take out of your 
 salonCut = Number(salonCut); // notifying that salonCut is a numercal value
 salonCut = Math.round(salonCut)/100;
 cutConsole = Math.round(salonCut * 100);
+
+//Tip Variables
+var tipPercent = [.1,.15,.2]; // array for tip percentages
+
+// Haircut Math
+
+  //Haircut Tip Calculations
+  var cutTen = cutCharge * tipPercent[0];
+  var cutFifteen = cutCharge * tipPercent[1];
+  var cutTwenty = cutCharge * tipPercent[2];
+
+  //Haircut Totals
+  var hairTotal = cutCharge - (cutCharge * salonCut);
+
+  //Haircut earnings
+  var hairToday = cutTimes * hairTotal
+
+  //Full Haircut Totals
+  var fullHair0 = hairTotal;
+  var fullHair1 = hairTotal;
+  var fullHair2 = hairTotal;
+    fullHair0 += cutTen;
+    fullHair1 += cutFifteen;
+    fullHair2 += cutTwenty;
+
+// Color Math
+
+  //Color Tip Calculations
+  var colorTen = colorCharge * tipPercent[0];
+  var colorFifteen = colorCharge * tipPercent[1];
+  var colorTwenty = colorCharge * tipPercent[2];
+
+  //Color Totals
+  var colorTotal = colorCharge - (colorCharge * salonCut);
+
+  //Color earnings
+  var colorToday = colorTimes * colorTotal
+
+  //Full Color Totals
+  var fullColor0 = hairTotal;
+  var fullColor1 = hairTotal;
+  var fullColor2 = hairTotal;
+    fullColor0 += colorTen;
+    fullColor1 += colorFifteen;
+    fullColor2 += colorTwenty;
