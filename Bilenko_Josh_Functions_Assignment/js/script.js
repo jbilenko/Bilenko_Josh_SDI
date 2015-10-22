@@ -44,19 +44,20 @@ if (movieCost < urWallet) {
 } else {
   alert("Do you even have enough money to stay home and rent a movie?");
 
-  function pizzaCalc (howMany) {
-    var pizzaAmnt = howMany * (3/8);
-    return pizzaAmnt
-  }
-
-  Math.round(pizzaAmnt);
-
-  function homeMovie (rentMovie, pizzaCalc, pizzaAmnt) {
-    var homeCost = rentMovie + pizzaAmnt;
-    return homeCost
-  }
-
   if (homeCost < urWallet) {
+// How many pizzas ultimate function
+    function pizzaCalc (howMany) {
+      var pizzaAmnt = howMany * (3/8);
+      return pizzaAmnt
+    }
+
+    Math.round(pizzaAmnt);
+// home total cost function
+    function homeMovie (rentMovie, pizzaCalc, pizzaAmnt) {
+      var homeCost = rentMovie + pizzaAmnt;
+      return homeCost
+    }
+
     alert("Hey! Stay home an rent a movie!");
     console.log("You have $" + urWallet + " and staying home to rent a movie for " + howMany + " people costs $" + homeCost + "!");
     console.log("Since you have " + howMany + " people staying over to watch a movie you need to get " + pizzaAmnt + " pizzas!");
