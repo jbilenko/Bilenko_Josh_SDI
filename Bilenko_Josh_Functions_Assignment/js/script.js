@@ -9,8 +9,20 @@ SDI Section 2
 alert("Welcome to Movie or Rent!");
 
 var name = prompt("What is your name?");
+  while (name == ""){
+    alert("Please give us your name!");
+    var name = prompt("What is your name?");
+  }
 var urWallet = prompt("How much money do you have?");
+  while (urWallet == ""){
+    alert("Please let us know how much money you have!");
+    var urWallet = prompt("How much money do you have?");
+  }
 var howMany = prompt("How many people are there?");
+  while (howMany == ""){
+    alert("We need to know how many people there are!");
+    var howMany = prompt("How many people are there?");
+  }
 
 // Total for Movie function!
 
