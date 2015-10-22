@@ -6,45 +6,41 @@ SDI Section 2
 
 // Movies or stay home calculator
 
-alert("Welcome to Movies or Stay Home Calculator!");
+alert("Welcome to Movie or Rent!");
 
+var name = prompt("What is your name?");
 var urWallet = prompt("How much money do you have?");
-urWallet = Number(urWallet);
+var howMany = prompt("How many people are there?");
 
-var whereTo = confirm("Are you trying to go to the movies? Ok (Yes) Cancel (No)");
+// Total for Movie function!
 
-if (whereTo = true) {
-  var howMany = prompt("How many people are going to the movies?");
-  howMany = Number(howMany);
-} else {
-  alert("So you've made you decisions to stay home! Congrats! Goodbye!");
+function movieCalc(ticketCost, howMany, avgFood){
+  var movieTotal = avgFood + (howMany * ticketCost);
+  return movieTotal;
 }
 
+var movieTotal = movieCalc(12, howMany, 20); //average pricing and audience per movie visit
 
-// How many pizzas ultimate function
+if(urWallet >= movieTotal){ //if you have more money than the cost of movies you can go!
+    alert("Hey! You can afford the movies!");
+    console.log("Let's go to the Movies");
+    console.log("Hey " + name + "!");
+    console.log("For the " + howMany + " of you to go to the movies it will cost $" + movieTotal + ".");
 
-    function pizzaAmnt(howMany) {
-      var pizzaAmnt = howMany * (3/8);
-      console.log("You should get " + pizzaAmnt + " pizza(s) for " + howMany + " person(s).");
+}else {  // if you don't have enough, you stay home
+    alert("Looks like you cant afford the movies!");
+    //Total for Home Movie Night
+
+    var homeCalc = function(rentMovie, pizza){
+      var homeTotal = rentMovie + pizza;
+      return homeTotal;
     }
 
-var movieTicket = 12;
-var avgfoodCost = 15;
-var rentMovie = 5;
-var lgPizza = 14;
-var homeCost = rentMovie + (pizzaAmnt * lgPizza);
-var movieCost = howMany * (movieTicket + avgfoodCost);
+    var rentMovie = 5; // returning the value of rentMovie.
+    var stayHome = homeCalc(5, 14); // numbers based off of average prices
 
-
-// conditional for amount of money you have vs movie total cost
-
-if (urWallet > movieCost) {
-  alert("You can afford to go to the movies!");
-  console.log("You have $" + urWallet + " and going to the movies with " + howMany + " people will cost $" + movieCost + "!");
-  console.log("Let's go to the movies!");
-} else {
-    alert("Hey! Stay home an rent a movie!");
-    console.log("You have $" + urWallet + " and staying home to rent a movie for " + howMany + " people costs $" + homeCost + "!");
-    pizzaAmnt(howMany);
-    console.log("Enjoy your night a home!");
+    console.log("Hey " + name + "!");
+    console.log("The " + howMany + " of us should stay in and order a movie!");
+    console.log("To rent a movie it will cost $" + rentMovie + ".");
+    console.log("The total will be $" + stayHome +"!");
 }
